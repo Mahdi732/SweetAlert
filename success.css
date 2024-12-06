@@ -1,0 +1,92 @@
+body {
+    background-color: rgba(107, 114, 128, 0.6);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+    height: 100vh;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.info {
+    background-color: #007bff; 
+}
+
+.success {
+    background-color: #28a745; 
+}
+
+.warning {
+    background-color: #ffc107; 
+    color: black;
+}
+
+.danger {
+    background-color: #dc3545; 
+}
+
+.sweet-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32rem;
+    min-height: 6rem;
+    color: white;
+    font-weight: 500;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .alert-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem; 
+  }
+
+  .alert-description {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    max-width: 80%;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .close-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+  }
+  
+  
