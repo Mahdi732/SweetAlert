@@ -9,16 +9,16 @@ function showSweetInfo(type, message) {
    alert.classList.add('sweet-alert');
    let icon = document.createElement('span');
    icon.classList.add('alert-icon');
+   icon.innerHTML = 'ℹ️';
    if (type === 'info') {
-      alert.classList.add('bg-blue-600');
+      alert.classList.add('info');
     } else if (type === 'success') {
-      alert.classList.add('bg-green-600');
+      alert.classList.add('success');
     } else if (type === 'warning') {
-      alert.classList.add('bg-yellow-500');
+      alert.classList.add('warning');
     } else if (type === 'danger') {
-      alert.classList.add('bg-red-600');
+      alert.classList.add('danger');
     }
-   icon.innerHTML = '✔️';
    let description = document.createElement('p');
    description.classList.add('alert-description');
    description.textContent = message;
